@@ -27,7 +27,11 @@ while lives > 0:
         break
     else:
         lives -= 1
-        if int(guess[0]) == x or int(guess[1]) == y or int(guess[2]) == z:
+        if int(guess[0]) == x:
+            print("Fermi")
+        if int(guess[1]) == y:
+            print("Fermi")
+        if int(guess[2]) == z:
             print("Fermi")
         if int(guess[0]) == y or int(guess[0]) == z:
             print("Pico")
